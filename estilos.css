@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #303b32;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-bottom: 4px solid #b50924;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-fruta {
+    font-size: 48px;
+}
+
+.logo h2 {
+    color: #b50924;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo small {
+    color: #28643b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: #28643b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #b50924;
+}
+
+/* PORTADA */
+
+.portada {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 60px 9%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(255,255,255,.95),
+        rgba(255,255,255,.30)
+    ),
+    url("imagenes/frambuesa1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.portada-contenido {
+    max-width: 600px;
+}
+
+.etiqueta {
+    color: #28643b;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.portada h1 {
+    color: #245c36;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.portada h2 {
+    color: #b50924;
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+
+.portada h3 {
+    color: #28643b;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.portada p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #b50924;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.boton:hover {
+    background: #85051a;
+    transform: translateY(-3px);
+}
+
+/* SECCIONES */
+
+.seccion {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 32px;
+    color: #b50924;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.fondo {
+    background: #f1f7ef;
+}
+
+/* TARJETAS */
+
+.mision {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.09);
+    transition: .3s;
+    border-bottom: 4px solid #b50924;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.tarjeta span {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #28643b;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* GALERIA */
+
+.galeria {
+    background: #ffffff;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.fotos img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.fotos img:hover {
+    transform: scale(1.02);
+}
+
+/* REQUISITOS */
+
+.lista-requisitos {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #f1f7ef;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.lista-requisitos p {
+    padding: 12px;
+    color: #28643b;
+    font-weight: bold;
+    border-bottom: 1px solid #dce8d9;
+}
+
+.nota {
+    color: #647568;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* FORMULARIO */
+
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.10);
+    text-align: left;
+    border-top: 5px solid #b50924;
+}
+
+form label {
+    display: block;
+    color: #28643b;
+    font-weight: bold;
+    margin: 17px 0 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd9ca;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    background: #fbfdfb;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #b50924;
+    box-shadow: 0 0 5px rgba(181,9,36,.15);
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+form button,
+.qr button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 22px;
+    background: #b50924;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form button:hover,
+.qr button:hover {
+    background: #85051a;
+}
+
+.aviso-privacidad {
+    background: #f1f7ef;
+    padding: 13px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #426149;
+}
+
+/* RESULTADO */
+
+#resultado {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 15px;
+    line-height: 1.7;
+    border-radius: 10px;
+}
+
+#resultado button {
+    padding: 12px 20px;
+    background: #28643b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+/* CODIGO QR */
+
+.qr input {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    border: 1px solid #cbd9ca;
+    border-radius: 7px;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+.qr button {
+    max-width: 320px;
+}
+
+#contenedorQR {
+    margin: 30px auto;
+    min-height: 100px;
+}
+
+#contenedorQR img {
+    width: 220px;
+    height: 220px;
+    padding: 8px;
+    background: white;
+    border: 3px solid #b50924;
+    border-radius: 10px;
+}
+
+#contenedorQR p {
+    margin-top: 12px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background: white;
+}
+
+.contacto h3 {
+    color: #28643b;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    line-height: 1.8;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background: #a70720;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+/* DISEÑO PARA CELULARES Y TABLETS */
+
+@media (max-width: 950px) {
+
+    .contenedor-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .mision,
+    .contenedor-tarjetas,
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 18px 10px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .portada {
+        min-height: 420px;
+        padding: 40px 7%;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .portada h2 {
+        font-size: 38px;
+    }
+
+    .portada h3 {
+        font-size: 18px;
+    }
+
+    .seccion {
+        padding: 45px 6%;
+    }
+
+    .seccion h2 {
+        font-size: 26px;
+    }
+
+    .fotos img {
+        height: 300px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+}
